@@ -1,0 +1,930 @@
+{
+    "valid_formats": {
+        "without_country_code": [
+            "^\\d{3}-\\d{3}-\\d{4}$",
+            "^\\d{10}$",
+            "^\\(\\d{3}\\) \\d{3}-\\d{4}$",
+            "^\\d{3} \\d{3} \\d{4}$"
+        ],
+        "with_country_code": [
+            "^\\+1 \\d{3}-\\d{3}-\\d{4}$",
+            "^\\+1\\d{10}$",
+            "^\\+1 \\(\\d{3}\\) \\d{3}-\\d{4}$",
+            "^\\+1 \\d{3} \\d{3} \\d{4}$"
+        ]
+    },
+    "valid_area_codes": [
+        {
+            "type": "Alabama",
+            "code_range": [
+                205,
+                251,
+                256,
+                334,
+                659,
+                938
+            ]
+        },
+        {
+            "type": "Alaska",
+            "code_range": [
+                907
+            ]
+        },
+        {
+            "type": "Arizona",
+            "code_range": [
+                480,
+                520,
+                602,
+                623,
+                928
+            ]
+        },
+        {
+            "type": "Arkansas",
+            "code_range": [
+                327,
+                479,
+                501,
+                870
+            ]
+        },
+        {
+            "type": "California",
+            "code_range": [
+                209,
+                213,
+                279,
+                310,
+                323,
+                341,
+                350,
+                369,
+                408,
+                415,
+                424,
+                442,
+                510,
+                530,
+                559,
+                562,
+                619,
+                626,
+                628,
+                650,
+                657,
+                661,
+                669,
+                707,
+                714,
+                747,
+                760,
+                805,
+                818,
+                820,
+                831,
+                840,
+                858,
+                909,
+                916,
+                925,
+                949,
+                951
+            ]
+        },
+        {
+            "type": "Colorado",
+            "code_range": [
+                303,
+                719,
+                720,
+                970,
+                983
+            ]
+        },
+        {
+            "type": "Connecticut",
+            "code_range": [
+                203,
+                475,
+                860,
+                959
+            ]
+        },
+        {
+            "type": "Delaware",
+            "code_range": [
+                302
+            ]
+        },
+        {
+            "type": "Florida",
+            "code_range": [
+                239,
+                305,
+                321,
+                324,
+                352,
+                386,
+                407,
+                448,
+                561,
+                645,
+                656,
+                689,
+                727,
+                728,
+                754,
+                772,
+                786,
+                813,
+                850,
+                863,
+                904,
+                941,
+                954
+            ]
+        },
+        {
+            "type": "Georgia",
+            "code_range": [
+                229,
+                404,
+                470,
+                478,
+                678,
+                706,
+                762,
+                770,
+                912,
+                943
+            ]
+        },
+        {
+            "type": "Hawaii",
+            "code_range": [
+                808
+            ]
+        },
+        {
+            "type": "Idaho",
+            "code_range": [
+                208,
+                986
+            ]
+        },
+        {
+            "type": "Illinois",
+            "code_range": [
+                217,
+                224,
+                309,
+                312,
+                331,
+                447,
+                464,
+                618,
+                630,
+                708,
+                730,
+                773,
+                779,
+                815,
+                847,
+                861,
+                872
+            ]
+        },
+        {
+            "type": "Indiana",
+            "code_range": [
+                219,
+                260,
+                317,
+                463,
+                574,
+                765,
+                812,
+                930
+            ]
+        },
+        {
+            "type": "Iowa",
+            "code_range": [
+                319,
+                515,
+                563,
+                641,
+                712
+            ]
+        },
+        {
+            "type": "Kansas",
+            "code_range": [
+                316,
+                620,
+                785,
+                913
+            ]
+        },
+        {
+            "type": "Kentucky",
+            "code_range": [
+                270,
+                364,
+                502,
+                606,
+                859
+            ]
+        },
+        {
+            "type": "Louisiana",
+            "code_range": [
+                225,
+                318,
+                337,
+                504,
+                985
+            ]
+        },
+        {
+            "type": "Maine",
+            "code_range": [
+                207
+            ]
+        },
+        {
+            "type": "Maryland",
+            "code_range": [
+                227,
+                240,
+                301,
+                410,
+                443,
+                667
+            ]
+        },
+        {
+            "type": "Massachusetts",
+            "code_range": [
+                339,
+                351,
+                413,
+                508,
+                617,
+                774,
+                781,
+                857,
+                978
+            ]
+        },
+        {
+            "type": "Michigan",
+            "code_range": [
+                231,
+                248,
+                269,
+                313,
+                517,
+                586,
+                616,
+                734,
+                810,
+                906,
+                947,
+                989
+            ]
+        },
+        {
+            "type": "Minnesota",
+            "code_range": [
+                218,
+                320,
+                507,
+                612,
+                651,
+                763,
+                952
+            ]
+        },
+        {
+            "type": "Mississippi",
+            "code_range": [
+                228,
+                601,
+                662,
+                769
+            ]
+        },
+        {
+            "type": "Missouri",
+            "code_range": [
+                235,
+                314,
+                417,
+                557,
+                573,
+                636,
+                660,
+                816,
+                975
+            ]
+        },
+        {
+            "type": "Montana",
+            "code_range": [
+                406
+            ]
+        },
+        {
+            "type": "Nebraska",
+            "code_range": [
+                308,
+                402,
+                531
+            ]
+        },
+        {
+            "type": "Nevada",
+            "code_range": [
+                702,
+                725,
+                775
+            ]
+        },
+        {
+            "type": "New Hampshire",
+            "code_range": [
+                603
+            ]
+        },
+        {
+            "type": "New Jersey",
+            "code_range": [
+                201,
+                551,
+                609,
+                640,
+                732,
+                848,
+                856,
+                862,
+                908,
+                973
+            ]
+        },
+        {
+            "type": "New Mexico",
+            "code_range": [
+                505,
+                575
+            ]
+        },
+        {
+            "type": "New York",
+            "code_range": [
+                212,
+                315,
+                329,
+                332,
+                347,
+                363,
+                516,
+                518,
+                585,
+                607,
+                624,
+                631,
+                646,
+                680,
+                716,
+                718,
+                838,
+                845,
+                914,
+                917,
+                929,
+                934
+            ]
+        },
+        {
+            "type": "North Carolina",
+            "code_range": [
+                252,
+                336,
+                472,
+                704,
+                743,
+                828,
+                910,
+                919,
+                980,
+                984
+            ]
+        },
+        {
+            "type": "North Dakota",
+            "code_range": [
+                701
+            ]
+        },
+        {
+            "type": "Ohio",
+            "code_range": [
+                216,
+                220,
+                234,
+                283,
+                326,
+                330,
+                380,
+                419,
+                436,
+                440,
+                513,
+                567,
+                614,
+                740,
+                937
+            ]
+        },
+        {
+            "type": "Oklahoma",
+            "code_range": [
+                405,
+                539,
+                572,
+                580,
+                918
+            ]
+        },
+        {
+            "type": "Oregon",
+            "code_range": [
+                458,
+                503,
+                541,
+                971
+            ]
+        },
+        {
+            "type": "Pennsylvania",
+            "code_range": [
+                215,
+                223,
+                267,
+                272,
+                412,
+                445,
+                484,
+                570,
+                582,
+                610,
+                717,
+                724,
+                814,
+                835,
+                878
+            ]
+        },
+        {
+            "type": "Rhode Island",
+            "code_range": [
+                401
+            ]
+        },
+        {
+            "type": "South Carolina",
+            "code_range": [
+                803,
+                839,
+                843,
+                854,
+                864
+            ]
+        },
+        {
+            "type": "South Dakota",
+            "code_range": [
+                605
+            ]
+        },
+        {
+            "type": "Tennessee",
+            "code_range": [
+                423,
+                615,
+                629,
+                731,
+                865,
+                901,
+                931
+            ]
+        },
+        {
+            "type": "Virgin Islands",
+            "code_range": [
+                340
+            ]
+        },
+        {
+            "type": "Northern Mariana Islands",
+            "code_range": [
+                670
+            ]
+        },
+        {
+            "type": "Guam",
+            "code_range": [
+                671
+            ]
+        },
+        {
+            "type": "American Samoa",
+            "code_range": [
+                684
+            ]
+        },
+        {
+            "type": "Puerto Rico",
+            "code_range": [
+                787,
+                939
+            ]
+        },
+        {
+            "type": "Texas",
+            "code_range": [
+                210,
+                214,
+                254,
+                281,
+                325,
+                346,
+                361,
+                409,
+                430,
+                432,
+                469,
+                512,
+                682,
+                713,
+                726,
+                737,
+                806,
+                817,
+                830,
+                832,
+                903,
+                915,
+                936,
+                940,
+                945,
+                956,
+                972,
+                979
+            ]
+        },
+        {
+            "type": "Utah",
+            "code_range": [
+                385,
+                435,
+                801
+            ]
+        },
+        {
+            "type": "Vermont",
+            "code_range": [
+                802
+            ]
+        },
+        {
+            "type": "Virginia",
+            "code_range": [
+                276,
+                434,
+                540,
+                571,
+                686,
+                703,
+                757,
+                804,
+                826,
+                948
+            ]
+        },
+        {
+            "type": "Washington",
+            "code_range": [
+                206,
+                253,
+                360,
+                425,
+                509,
+                564
+            ]
+        },
+        {
+            "type": "Washington D.C. ",
+            "code_range": [
+                202,
+                771
+            ]
+        },
+        {
+            "type": "West Virginia",
+            "code_range": [
+                304,
+                681
+            ]
+        },
+        {
+            "type": "Wisconsin",
+            "code_range": [
+                262,
+                274,
+                353,
+                414,
+                534,
+                608,
+                715,
+                920
+            ]
+        },
+        {
+            "type": "Wyoming",
+            "code_range": [
+                307
+            ]
+        },
+        {
+            "type": "toll-free",
+            "code_range": [
+                800,
+                833,
+                844,
+                855,
+                866,
+                877,
+                888
+            ]
+        },
+        {
+            "type": "premium-number",
+            "code_range": [
+                900
+            ]
+        },
+        {
+            "type": "non-geographic",
+            "code_range": [
+                500,
+                521,
+                522,
+                533,
+                544,
+                566,
+                577,
+                588,
+                523,
+                524,
+                525,
+                526
+            ]
+        },
+        {
+            "type": "federal (GETS)",
+            "code_range": [
+                710
+            ]
+        },
+        {
+            "type": "service access code (SAC)",
+            "code_range": [
+                700
+            ]
+        },
+        {
+            "type": "Alberta",
+            "code_range": [
+                780,
+                368,
+                587,
+                403,
+                825
+            ]
+        },
+        {
+            "type": "British Columbia",
+            "code_range": [
+                236,
+                250,
+                672,
+                604,
+                778
+            ]
+        },
+        {
+            "type": "Manitoba",
+            "code_range": [
+                584,
+                431,
+                204
+            ]
+        },
+        {
+            "type": "New Brunswick",
+            "code_range": [
+                428,
+                506
+            ]
+        },
+        {
+            "type": "Newfoundland",
+            "code_range": [
+                709,
+                879
+            ]
+        },
+        {
+            "type": "Northwest Territories/Nunavut/Yukon",
+            "code_range": [
+                867
+            ]
+        },
+        {
+            "type": "Nova Scotia/Prince Edward Island",
+            "code_range": [
+                782,
+                902
+            ]
+        },
+        {
+            "type": "Ontario",
+            "code_range": [
+                905,
+                249,
+                647,
+                519,
+                343,
+                742,
+                382,
+                807,
+                548,
+                753,
+                683,
+                437,
+                365,
+                226,
+                613,
+                416,
+                289,
+                705
+            ]
+        },
+        {
+            "type": "Quebec",
+            "code_range": [
+                438,
+                367,
+                514,
+                418,
+                450,
+                873,
+                468,
+                354,
+                819,
+                263,
+                579,
+                581
+            ]
+        },
+        {
+            "type": "Saskatchewan",
+            "code_range": [
+                639,
+                306,
+                474
+            ]
+        },
+        {
+            "type": "Canadian non-geographic",
+            "code_range": [
+                600
+            ]
+        },
+        {
+            "type": "Bahamas",
+            "code_range": [
+                242
+            ]
+        },
+        {
+            "type": "Barbados",
+            "code_range": [
+                246
+            ]
+        },
+        {
+            "type": "Anguilla",
+            "code_range": [
+                264
+            ]
+        },
+        {
+            "type": "Antigua and Barbuda",
+            "code_range": [
+                268
+            ]
+        },
+        {
+            "type": "British Virgin Islands",
+            "code_range": [
+                284
+            ]
+        },
+        {
+            "type": "Cayman Islands",
+            "code_range": [
+                345
+            ]
+        },
+        {
+            "type": "Bermuda",
+            "code_range": [
+                441
+            ]
+        },
+        {
+            "type": "Grenada",
+            "code_range": [
+                473
+            ]
+        },
+        {
+            "type": "Turks and Caicos Islands",
+            "code_range": [
+                649
+            ]
+        },
+        {
+            "type": "Jamaica",
+            "code_range": [
+                658,
+                876
+            ]
+        },
+        {
+            "type": "Montserrat",
+            "code_range": [
+                664
+            ]
+        },
+        {
+            "type": "Sint Maarten",
+            "code_range": [
+                721
+            ]
+        },
+        {
+            "type": "Saint Lucia",
+            "code_range": [
+                758
+            ]
+        },
+        {
+            "type": "Dominica",
+            "code_range": [
+                767
+            ]
+        },
+        {
+            "type": "Saint Vincent and the Grenadines",
+            "code_range": [
+                784
+            ]
+        },
+        {
+            "type": " Dominican Republic",
+            "code_range": [
+                809,
+                829,
+                849
+            ]
+        },
+        {
+            "type": "Trinidad and Tobago",
+            "code_range": [
+                868
+            ]
+        },
+        {
+            "type": "Saint Kitts and Nevis",
+            "code_range": [
+                869
+            ]
+        }
+    ]
+}
