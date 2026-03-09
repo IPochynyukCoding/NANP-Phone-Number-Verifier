@@ -31,9 +31,9 @@ if __name__ == "__main__":
         is_international=True if phone_number.startswith("+1") else False
         is_valid_phone_format=phone_format_checker(phone_number,valid_parameters['valid_formats'],is_international)
         if is_valid_phone_format:
-            print(f"The phone number {phone_number} passes the formatting test")
+            print(f"The phone number {phone_number} passes the formatting test.")
         else:
-            print(f"The phone number {phone_number} fails the formatting test")
+            print(f"The phone number {phone_number} fails the formatting test.")
             continue
         standardized_phone=standardize_format(phone_number,is_international)
         area_code_type=area_code_checker(standardized_phone,valid_parameters["valid_area_codes"])
