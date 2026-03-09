@@ -28,7 +28,7 @@ if __name__ == "__main__":
         phone_number=input("Enter your phone number or press 'q' to quit: ")
         if phone_number.lower() == "q":
             quit()
-        is_international=True if phone_number.startswith("+1") else False
+        is_international=True if phone_number.startswith("1") or phone_number.startswith("+1") else False
         is_valid_phone_format=phone_format_checker(phone_number,valid_parameters['valid_formats'],is_international)
         if is_valid_phone_format:
             print(f"The phone number {phone_number} passes the formatting test.")
