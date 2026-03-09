@@ -672,7 +672,7 @@
             ]
         },
         {
-            "type": "premium-number",
+            "type": "premium",
             "code_range": [
                 900
             ]
