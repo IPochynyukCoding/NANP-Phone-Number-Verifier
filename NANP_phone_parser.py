@@ -9,7 +9,9 @@ def phone_number_finder(file_contents:str,regex_formats:list):
     for format in regex_formats:
         results:list[str]=re.findall(format,file_contents)
         if results:
-            phone_numbers+=results
+            for result in results:
+                if result not in phone_numbers:
+                    phone_numbers.append(result)
     return phone_numbers
 if __name__ == "__main__":
     with open("valid_parameters.json") as valid_parameters_json:
@@ -17,7 +19,7 @@ if __name__ == "__main__":
     while True:
         is_valid_file=False
         while(not is_valid_file):
-            file_name=input("Text file do you want to search: ").strip("'").strip('"')
+            file_name=input("Text file to search for phone numbers: ").strip("'").strip('"')
             #Dealing with Microsoft Outlook files
             if pathlib.Path(file_name).suffix == ".msg":
                 outlook_file=extract_msg.Message(file_name)
@@ -35,9 +37,14 @@ if __name__ == "__main__":
         if phone_finder:
             phone_finder=list(map(lambda x:x+"\n",phone_finder))
             phone_finder[-1]=phone_finder[-1].strip("\n")
+            print("Found numbers:")
+            for phone_number in phone_finder:
+                print(phone_number.strip("\n"))
             current_time=datetime.now().strftime("%Y%m%d_%H%M%S")
             file_name=f"found_numbers_{current_time}.txt"
             with open(file_name,'w') as phone_list:
                 phone_list.writelines(phone_finder)
             file_directory=os.path.join(os.getcwd(),file_name)
-            print(f"Successfully added {file_directory} with {len(phone_finder)} phone number(s)")
+            print(f"Successfully added {file_directory} with {len(phone_finder)} unique phone number(s)")
+        else:
+            print("Unable to find phone numbers within this file")
