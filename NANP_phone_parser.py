@@ -1,8 +1,6 @@
 import json
 import os
 import re
-import pathlib
-import extract_msg
 from datetime import datetime
 def phone_number_finder(file_contents:str,regex_formats:list):
     phone_numbers:list[str]=[]
@@ -20,12 +18,7 @@ if __name__ == "__main__":
         is_valid_file=False
         while(not is_valid_file):
             file_name=input("Text file to search for phone numbers: ").strip("'").strip('"')
-            #Dealing with Microsoft Outlook files
-            if pathlib.Path(file_name).suffix == ".msg":
-                outlook_file=extract_msg.Message(file_name)
-                file_contents=outlook_file.body
-                is_valid_file=True
-            elif os.path.isfile(file_name):
+            if os.path.isfile(file_name):
                 with open(file_name) as file_opener:
                     file_contents=file_opener.read()
                 is_valid_file=True
