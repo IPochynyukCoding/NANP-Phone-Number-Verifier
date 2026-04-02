@@ -7,19 +7,19 @@
             "^\\d{3}\\.\\d{3}\\.\\d{4}$"
         ],
         "with_country_code": [
-			"^\\+?1-\\d{3}-\\d{3}-\\d{4}$",
+            "^\\+?1-\\d{3}-\\d{3}-\\d{4}$",
             "^\\+?1 \\d{3}-\\d{3}-\\d{4}$",
             "^\\+?1 \\(\\d{3}\\) \\d{3}-\\d{4}$",
             "^\\+?1 *\\d{3} *\\d{3} *\\d{4}$",
             "^\\+?1\\.\\d{3}\\.\\d{3}\\.\\d{4}$"
         ]
     },
-    "valid_formats_parser":[
-            "\\d{3}-\\d{3}-\\d{4}",
-            "\\(\\d{3}\\)? \\d{3}-\\d{4}",
-            "\\d{3} \\d{3} \\d{4}",
-            "\\d{3}\\.\\d{3}\\.\\d{4}"
-        ],
+    "valid_formats_parser": [
+        "\\d{3}-\\d{3}-\\d{4}",
+        "\\(\\d{3}\\)? \\d{3}-\\d{4}",
+        "\\d{3} \\d{3} \\d{4}",
+        "\\d{3}\\.\\d{3}\\.\\d{4}"
+    ],
     "valid_area_codes": [
         {
             "type": "Alabama",
@@ -28,6 +28,7 @@
                 251,
                 256,
                 334,
+                483,
                 659,
                 938
             ]
@@ -67,6 +68,7 @@
                 323,
                 341,
                 350,
+                357,
                 369,
                 408,
                 415,
@@ -85,12 +87,14 @@
                 669,
                 707,
                 714,
+                738,
                 747,
                 760,
                 805,
                 818,
                 820,
                 831,
+                837,
                 840,
                 858,
                 909,
@@ -106,6 +110,7 @@
                 303,
                 719,
                 720,
+                748,
                 970,
                 983
             ]
@@ -123,6 +128,13 @@
             "type": "Delaware",
             "code_range": [
                 302
+            ]
+        },
+        {
+            "type": "District of Columbia (Washington D.C.)",
+            "code_range": [
+                202,
+                771
             ]
         },
         {
@@ -251,6 +263,7 @@
                 225,
                 318,
                 337,
+                457,
                 504,
                 985
             ]
@@ -296,6 +309,7 @@
                 517,
                 586,
                 616,
+                679,
                 734,
                 810,
                 906,
@@ -312,6 +326,7 @@
                 612,
                 651,
                 763,
+                924,
                 952
             ]
         },
@@ -319,6 +334,7 @@
             "type": "Mississippi",
             "code_range": [
                 228,
+                471,
                 601,
                 662,
                 769
@@ -505,6 +521,7 @@
             "type": "South Carolina",
             "code_range": [
                 803,
+                821,
                 839,
                 843,
                 854,
@@ -523,41 +540,11 @@
                 423,
                 615,
                 629,
+                729,
                 731,
                 865,
                 901,
                 931
-            ]
-        },
-        {
-            "type": "Virgin Islands",
-            "code_range": [
-                340
-            ]
-        },
-        {
-            "type": "Northern Mariana Islands",
-            "code_range": [
-                670
-            ]
-        },
-        {
-            "type": "Guam",
-            "code_range": [
-                671
-            ]
-        },
-        {
-            "type": "American Samoa",
-            "code_range": [
-                684
-            ]
-        },
-        {
-            "type": "Puerto Rico",
-            "code_range": [
-                787,
-                939
             ]
         },
         {
@@ -575,6 +562,7 @@
                 432,
                 469,
                 512,
+                621,
                 682,
                 713,
                 726,
@@ -634,13 +622,6 @@
             ]
         },
         {
-            "type": "Washington D.C.",
-            "code_range": [
-                202,
-                771
-            ]
-        },
-        {
             "type": "West Virginia",
             "code_range": [
                 304,
@@ -667,6 +648,265 @@
             ]
         },
         {
+            "type": "Alberta",
+            "code_range": [
+                368,
+                403,
+                568,
+                587,
+                780,
+                825
+            ]
+        },
+        {
+            "type": "British Columbia",
+            "code_range": [
+                236,
+                250,
+                257,
+                604,
+                672,
+                778
+            ]
+        },
+        {
+            "type": "Manitoba",
+            "code_range": [
+                204,
+                431,
+                584
+            ]
+        },
+        {
+            "type": "New Brunswick",
+            "code_range": [
+                204,
+                431,
+                584
+            ]
+        },
+        {
+            "type": "Newfoundland and Labrador",
+            "code_range": [
+                709,
+                879
+            ]
+        },
+        {
+            "type": "Northwest Territories/Nunavut/Yukon",
+            "code_range": [
+                867
+            ]
+        },
+        {
+            "type": "Nova Scotia",
+            "code_range": [
+                782,
+                851,
+                902
+            ]
+        },
+        {
+            "type": "Ontario",
+            "code_range": [
+                226,
+                249,
+                289,
+                343,
+                365,
+                382,
+                387,
+                416,
+                437,
+                460,
+                519,
+                537,
+                548,
+                613,
+                647,
+                683,
+                705,
+                742,
+                753,
+                807,
+                905,
+                942
+            ]
+        },
+        {
+            "type": "Nova Scotia",
+            "code_range": [
+                851
+            ]
+        },
+        {
+            "type": "Quebec",
+            "code_range": [
+                263,
+                354,
+                367,
+                418,
+                438,
+                450,
+                468,
+                514,
+                579,
+                581,
+                819,
+                873
+            ]
+        },
+        {
+            "type": "Saskatchewan",
+            "code_range": [
+                306,
+                474,
+                639
+            ]
+        },
+        {
+            "type": "Anguilla",
+            "code_range": [
+                264
+            ]
+        },
+        {
+            "type": "Antigua and Barbuda",
+            "code_range": [
+                268
+            ]
+        },
+        {
+            "type": "Bahamas",
+            "code_range": [
+                242
+            ]
+        },
+        {
+            "type": "Barbados",
+            "code_range": [
+                246
+            ]
+        },
+        {
+            "type": "Bermuda",
+            "code_range": [
+                441
+            ]
+        },
+        {
+            "type": "British Virgin Islands",
+            "code_range": [
+                284
+            ]
+        },
+        {
+            "type": "Cayman Islands",
+            "code_range": [
+                345
+            ]
+        },
+        {
+            "type": "Dominica",
+            "code_range": [
+                767
+            ]
+        },
+        {
+            "type": "Dominican Republic",
+            "code_range": [
+                809,
+                829,
+                849
+            ]
+        },
+        {
+            "type": "Grenada",
+            "code_range": [
+                473
+            ]
+        },
+        {
+            "type": "Jamaica",
+            "code_range": [
+                658,
+                876
+            ]
+        },
+        {
+            "type": "Montserrat",
+            "code_range": [
+                664
+            ]
+        },
+        {
+            "type": "Puerto Rico",
+            "code_range": [
+                787,
+                939
+            ]
+        },
+        {
+            "type": "Saint Kitts and Nevis",
+            "code_range": [
+                869
+            ]
+        },
+        {
+            "type": "Saint Lucia",
+            "code_range": [
+                758
+            ]
+        },
+        {
+            "type": "Saint Vincent and the Grenadines",
+            "code_range": [
+                784
+            ]
+        },
+        {
+            "type": "Sint Maarten",
+            "code_range": [
+                721
+            ]
+        },
+        {
+            "type": "Trinidad and Tobago",
+            "code_range": [
+                868
+            ]
+        },
+        {
+            "type": "Turks and Caicos Islands",
+            "code_range": [
+                649
+            ]
+        },
+        {
+            "type": "U.S. Virgin Islands",
+            "code_range": [
+                340
+            ]
+        },
+        {
+            "type": "American Samoa",
+            "code_range": [
+                684
+            ]
+        },
+        {
+            "type": "Guam",
+            "code_range": [
+                671
+            ]
+        },
+        {
+            "type": "Northern Mariana Islands",
+            "code_range": [
+                670
+            ]
+        },
+                {
             "type": "toll-free",
             "code_range": [
                 800,
@@ -702,235 +942,15 @@
             ]
         },
         {
-            "type": "federal (GETS)",
-            "code_range": [
-                710
-            ]
-        },
-        {
             "type": "service access code (SAC)",
             "code_range": [
                 700
             ]
         },
         {
-            "type": "Alberta",
-            "code_range": [
-                780,
-                368,
-                587,
-                403,
-                825
-            ]
-        },
-        {
-            "type": "British Columbia",
-            "code_range": [
-                236,
-                250,
-                672,
-                604,
-                778
-            ]
-        },
-        {
-            "type": "Manitoba",
-            "code_range": [
-                584,
-                431,
-                204
-            ]
-        },
-        {
-            "type": "New Brunswick",
-            "code_range": [
-                428,
-                506
-            ]
-        },
-        {
-            "type": "Newfoundland",
-            "code_range": [
-                709,
-                879
-            ]
-        },
-        {
-            "type": "Northwest Territories/Nunavut/Yukon",
-            "code_range": [
-                867
-            ]
-        },
-        {
-            "type": "Nova Scotia/Prince Edward Island",
-            "code_range": [
-                782,
-                902
-            ]
-        },
-        {
-            "type": "Ontario",
-            "code_range": [
-                905,
-                249,
-                647,
-                519,
-                343,
-                742,
-                382,
-                807,
-                548,
-                753,
-                683,
-                437,
-                365,
-                226,
-                613,
-                416,
-                289,
-                705
-            ]
-        },
-        {
-            "type": "Quebec",
-            "code_range": [
-                438,
-                367,
-                514,
-                418,
-                450,
-                873,
-                468,
-                354,
-                819,
-                263,
-                579,
-                581
-            ]
-        },
-        {
-            "type": "Saskatchewan",
-            "code_range": [
-                639,
-                306,
-                474
-            ]
-        },
-        {
             "type": "Canadian non-geographic",
             "code_range": [
                 600
-            ]
-        },
-        {
-            "type": "Bahamas",
-            "code_range": [
-                242
-            ]
-        },
-        {
-            "type": "Barbados",
-            "code_range": [
-                246
-            ]
-        },
-        {
-            "type": "Anguilla",
-            "code_range": [
-                264
-            ]
-        },
-        {
-            "type": "Antigua and Barbuda",
-            "code_range": [
-                268
-            ]
-        },
-        {
-            "type": "British Virgin Islands",
-            "code_range": [
-                284
-            ]
-        },
-        {
-            "type": "Cayman Islands",
-            "code_range": [
-                345
-            ]
-        },
-        {
-            "type": "Bermuda",
-            "code_range": [
-                441
-            ]
-        },
-        {
-            "type": "Grenada",
-            "code_range": [
-                473
-            ]
-        },
-        {
-            "type": "Turks and Caicos Islands",
-            "code_range": [
-                649
-            ]
-        },
-        {
-            "type": "Jamaica",
-            "code_range": [
-                658,
-                876
-            ]
-        },
-        {
-            "type": "Montserrat",
-            "code_range": [
-                664
-            ]
-        },
-        {
-            "type": "Sint Maarten",
-            "code_range": [
-                721
-            ]
-        },
-        {
-            "type": "Saint Lucia",
-            "code_range": [
-                758
-            ]
-        },
-        {
-            "type": "Dominica",
-            "code_range": [
-                767
-            ]
-        },
-        {
-            "type": "Saint Vincent and the Grenadines",
-            "code_range": [
-                784
-            ]
-        },
-        {
-            "type": " Dominican Republic",
-            "code_range": [
-                809,
-                829,
-                849
-            ]
-        },
-        {
-            "type": "Trinidad and Tobago",
-            "code_range": [
-                868
-            ]
-        },
-        {
-            "type": "Saint Kitts and Nevis",
-            "code_range": [
-                869
             ]
         }
     ]
